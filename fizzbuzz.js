@@ -4,7 +4,7 @@ This is a classic interview question. Write a program that asks the user for a n
 
 const prompt = require("prompt-sync")({sigint: true});
 
-let num = Number(prompt("Enter a number from 1 to 100: "));
+let num = Number(prompt("Enter a number: "));
 
 if (num % 3 === 0 && num % 5 === 0) {
     console.log("FizzBuzz");
