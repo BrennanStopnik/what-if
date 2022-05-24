@@ -19,3 +19,25 @@ if (size % 3 === 0){
 } else{
     console.log("You blew it! Next time try a number.")
 }
+
+
+
+let classSize = Number(prompt("How many people are in the class? "));
+
+let groupsOf3 = 0;
+let groupsOf2 = 0;
+
+if (classSize % 3 === 0){ 
+    groupsOf3 = classSize/3;
+} else if (classSize % 3 === 1){ 
+    classSize -= 4;
+    groupsOf2 = 2;
+    groupsOf3 = classSize / 3;
+} else if (classSize % 3 === 2){ 
+    classSize -= 2;
+    groupsOf2 = 1;
+    groupsOf3 = classSize / 3;  
+}
+
+console.log("Groups of 3: " + groupsOf3);
+console.log("Groups of 2: " + groupsOf2);
